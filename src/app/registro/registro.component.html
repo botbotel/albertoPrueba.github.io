@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo registro</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Zona de registro</h1>
+    </div>
+    <div class="formreg">
+        <h3>Introduce tus datos para empezar a utilizar la aplicación</h3>
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" #nombre>
+    </div>
+    <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text"  class="form-control" id="apellido" #apellido>
+    </div>
+    <div class="form-group">
+        <label for="email">email</label>
+        <input type="email"  class="form-control" id="email" #email maxlength="30">
+    </div>
+    <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password"  class="form-control" id="password" #password maxlength="20">
+    </div>
+    <button type="submit" class="btnreg" (click)='registro(nombre.value, apellido.value, email.value, password.value)'>Listo</button>
+</div>
+</body>
+</html>
+
