@@ -3,7 +3,7 @@
 * CREACIÓN DE CLASE DE NUEVO USUARIO
 */
 
-export class nuevoUser {
+export class nuevoUser { 
     public nombre
     public apellido
     public email
@@ -16,6 +16,7 @@ export class nuevoUser {
     public static getApellido: string
     public static getEmail: string
     public static getPassword: string
+
 
 /**
 * DECLARACION DE CONSTRUCTOR
@@ -31,6 +32,8 @@ export class nuevoUser {
     public nuevoUser(nombre:string, apellido:string, email:string, password:string) {
         this.nuevoUser(nombre, apellido, email, password)
     }
+
+
 
 /**
 * SETTER DE NUEVO USUARIO
@@ -66,4 +69,6 @@ export class nuevoUser {
         return this.password;
     }
 }
+
+
 

@@ -8,9 +8,9 @@ body {
     justify-content: center;
     align-items: center;
     padding: 3rem;
-    background-color: cornflowerblue;
+    background-color: rgb(0, 43, 122);
     color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .header .h1{
@@ -35,10 +35,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5rem;
-    background-color: rgb(172, 172, 172);
+    background-color: rgb(194, 194, 194);
     border-radius: 10px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+
 
 .alregis {
     display: flex;
@@ -47,7 +48,21 @@ body {
     align-items: center;
     padding: 5rem;
     margin: 2rem;
-    background-color: rgb(172, 172, 172);
+    background-color: rgb(194, 194, 194);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+
+.btnlog {
+    width: 8rem;
+    padding: 5px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 43, 122) ;
+    color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
