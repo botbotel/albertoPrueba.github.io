@@ -71,7 +71,7 @@ this._model = new nuevoUser(nuevoUser.setNombre, nuevoUser.setApellido, nuevoUse
 registro(nombre:string, apellido:string, email:string, password:string){
 
   const usuario_nuevo:nuevoUser =  new nuevoUser(nombre, apellido, email, password) 
-    alert('Estás seguro que quieres crear el nuevo usuario:\n' + 'Nombre: '+ usuario_nuevo.nombre + "\nApellido: " + usuario_nuevo.apellido + '\nEmail: ' + usuario_nuevo.email + '\nContraseña: ' + usuario_nuevo.password + ' ?')
+    alert('Se va a crear el nuevo usuario:\n' + 'Nombre: '+ usuario_nuevo.nombre + "\nApellido: " + usuario_nuevo.apellido + '\nEmail: ' + usuario_nuevo.email + '\nContraseña: ' + usuario_nuevo.password)
     listaUsuarios.push(usuario_nuevo)
     this.dataServices.guardarUsuarios(listaUsuarios)
     alert('Usuario creado correctamente!!!')
