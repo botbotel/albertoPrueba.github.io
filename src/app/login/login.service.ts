@@ -19,18 +19,18 @@ export class LoginService {
 
     loginBD(email:string, password:string) {
         firebase.auth().signInWithEmailAndPassword(email, password).then(
-            response =>{
+            _response =>{
                 firebase.auth().currentUser?.getIdToken().then(
                     token => {
+                        alert('Usuario ' + email + ' logeado con éxito')
                         this.token=token;
                         this.router.navigate(["/area-log"])
-                    }
+                    } 
                 )
             }
         )
     }
     getIdToken(){
         return this.token
-    }
-
+    } 
 }
