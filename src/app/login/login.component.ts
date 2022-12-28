@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit{
       const password = form.value.password
       this.loginService.loginBD(email, password)
     }finally {
-      alert('Usuario logeado con exito')
+      alert('Usuario '+ form.value.email +' logeado con exito')
       this.router.navigate(['../area-log'])
     }
   }
