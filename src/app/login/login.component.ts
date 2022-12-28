@@ -25,10 +25,14 @@ export class LoginComponent implements OnInit{
    * PARA VALIDAR EL LOGIN
    */
   login(form:NgForm) {
-    const email = form.value.email
-    const password = form.value.password
-    this.loginService.loginBD(email, password)
-    alert('Usuario logeado con exito')
+    try {
+      const email = form.value.email
+      const password = form.value.password
+      this.loginService.loginBD(email, password)
+    }finally {
+      alert('Usuario logeado con exito')
+      this.router.navigate(['../area-log'])
+    }
   }
 }
   

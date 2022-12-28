@@ -17,7 +17,8 @@ import { LoginService } from './login/login.service';
 const appRoutes:Routes= [
   {path:'', component: HomeComponentComponent},
   { path:'login', component: LoginComponent },
-  { path:'registro', component: RegistroComponent }
+  { path:'registro', component: RegistroComponent },
+  { path:'area-log', component: AreaLogComponent }
 ]
 
 @NgModule({
