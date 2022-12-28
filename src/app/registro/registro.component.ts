@@ -71,10 +71,14 @@ this._model = new nuevoUser(nuevoUser.setNombre, nuevoUser.setApellido, nuevoUse
 registro(nombre:string, apellido:string, email:string, password:string){
 
   const usuario_nuevo:nuevoUser =  new nuevoUser(nombre, apellido, email, password) 
-    alert('Se va a crear el nuevo usuario:\n' + 'Nombre: '+ usuario_nuevo.nombre + "\nApellido: " + usuario_nuevo.apellido + '\nEmail: ' + usuario_nuevo.email + '\nContraseña: ' + usuario_nuevo.password)
-    listaUsuarios.push(usuario_nuevo)
+    const confirmar = confirm('Se va a crear el nuevo usuario:\n' + 'Nombre: '+ usuario_nuevo.nombre + "\nApellido: " + usuario_nuevo.apellido + '\nEmail: ' + usuario_nuevo.email + '\nContraseña: ' + usuario_nuevo.password)
+    if(confirmar == true){
+      listaUsuarios.push(usuario_nuevo)
     this.dataServices.guardarUsuarios(listaUsuarios)
     alert('Usuario creado correctamente!!!')
+    } else {
+      alert('Revisa los datos y vuelve a registrarte')
+    }
 
   }
   get diagnostic() { return JSON.stringify(this.model); }
