@@ -11,16 +11,18 @@
         <h1>Login Site</h1>
     </div>
     <div class="formreg">
-        <h3>¡Vamos! logeate y empecemos</h3>
-    <div class="form-group">
-        <label for="email">email</label>
-        <input type="email" class="form-control" id="email" required>
-    </div>
-    <div class="form-group">
-        <label for="password">Contraseña</label>
-        <input type="password"  class="form-control" id="password" required>
-    </div>
-    <button type="button" class="btnlog" >Listo</button>
+            <h3>¡Vamos! logeate y empecemos</h3>
+            <form class="form-group" #formularioLogin="ngForm" (ngSubmit)="login(formularioLogin)">
+        <div class="form-group">
+            <label for="email">email</label>
+            <input type="email" class="form-control" name="email" placeholder="name@domain.com" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password"  class="form-control" name="password" placeholder="abcd1234" ngModel>
+        </div>
+            </form>
+        <button type="submit" class="btnlog" >Listo</button>
     </div>
     
 </body>

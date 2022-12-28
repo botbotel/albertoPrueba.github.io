@@ -9,7 +9,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { FormsModule } from '@angular/forms';
 import { DataServices } from './data.services';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { AreaLogComponent } from './area-log/area-log.component'
+import { LoginService } from './login/login.service';
+
 
 const appRoutes:Routes= [
   {path:'', component: HomeComponentComponent},
@@ -22,6 +25,7 @@ const appRoutes:Routes= [
     AppComponent,
     LoginComponent,
     RegistroComponent,
+    AreaLogComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,7 @@ const appRoutes:Routes= [
     RouterModule.forRoot(appRoutes),
     HttpClientModule
   ],
-  providers: [DataServices, RegistroComponent],
+  providers: [DataServices, RegistroComponent, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
